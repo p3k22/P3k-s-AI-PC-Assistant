@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Icons\logo.ico" />
+	  <None Remove="Resources\Images\sound_disabled.png" />
+	  <None Remove="Resources\Images\sound_enabled.png" />
+	</ItemGroup>
+
+	<!--Greatest plugins of all time! Merges all libraries into the .exe-->
+	<ItemGroup>
+		<PackageReference Include="Costura.Fody" Version="5.7.0">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Fody" Version="6.8.2">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
+		<PackageReference Include="NAudio" Version="2.2.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="ChatGPT">
+			<HintPath>..\Bin\ChatGPT.dll</HintPath>
+		</Reference>
+		<Reference Include="MyLogger">
+			<HintPath>..\Bin\MyLogger.dll</HintPath>
+		</Reference>
+		<Reference Include="TextToSpeech">
+			<HintPath>..\Bin\TextToSpeech.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Resources\Icons\logo.ico">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\sound_disabled.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\sound_enabled.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	</ItemGroup>
+
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="copy &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(ProjectDir)..\Bin&quot;" />
+	</Target>
+
+
+</Project>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerHost", "Modules\Host\ServerHost\ServerHost.csproj", "{C15A6F90-62CA-4FB6-84F7-B35766D34DBE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoogleTextToSpeech", "Modules\Host\GoogleTextToSpeech\GoogleTextToSpeech.csproj", "{4BC6350E-3C95-4B30-9CDF-E6E798945F47}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAITextToSpeech", "Modules\Host\OpenAITextToSpeech\OpenAITextToSpeech.csproj", "{9EDB93B1-5FF3-4DC6-B646-D558C262E6F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatGPT", "Modules\Host\ChatGPT\ChatGPT.csproj", "{A985BB37-CE94-49E3-9B77-F35516C86829}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C15A6F90-62CA-4FB6-84F7-B35766D34DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C15A6F90-62CA-4FB6-84F7-B35766D34DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C15A6F90-62CA-4FB6-84F7-B35766D34DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C15A6F90-62CA-4FB6-84F7-B35766D34DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC6350E-3C95-4B30-9CDF-E6E798945F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC6350E-3C95-4B30-9CDF-E6E798945F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC6350E-3C95-4B30-9CDF-E6E798945F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC6350E-3C95-4B30-9CDF-E6E798945F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EDB93B1-5FF3-4DC6-B646-D558C262E6F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDB93B1-5FF3-4DC6-B646-D558C262E6F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDB93B1-5FF3-4DC6-B646-D558C262E6F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDB93B1-5FF3-4DC6-B646-D558C262E6F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A985BB37-CE94-49E3-9B77-F35516C86829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A985BB37-CE94-49E3-9B77-F35516C86829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A985BB37-CE94-49E3-9B77-F35516C86829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A985BB37-CE94-49E3-9B77-F35516C86829}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CA3C468-5C0C-48A6-B927-FC6EDF362A4B}
+	EndGlobalSection
+EndGlobal

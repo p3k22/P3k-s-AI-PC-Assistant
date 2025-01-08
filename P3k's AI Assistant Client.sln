@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatGPT", "Modules\Local\ChatGPT\ChatGPT.csproj", "{3139DC3E-A876-484B-B8A6-5CA15876EBCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextToSpeech", "Modules\Local\TextToSpeech\TextToSpeech.csproj", "{E79F033A-94F5-4698-9CCD-1E727ED44743}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsAIAssistant", "Modules\Local\WindowsAIAssistant\WindowsAIAssistant.csproj", "{9D8AA3B6-BD77-4B71-8F6B-A156F731FE86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3139DC3E-A876-484B-B8A6-5CA15876EBCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3139DC3E-A876-484B-B8A6-5CA15876EBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3139DC3E-A876-484B-B8A6-5CA15876EBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3139DC3E-A876-484B-B8A6-5CA15876EBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E79F033A-94F5-4698-9CCD-1E727ED44743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E79F033A-94F5-4698-9CCD-1E727ED44743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E79F033A-94F5-4698-9CCD-1E727ED44743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E79F033A-94F5-4698-9CCD-1E727ED44743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D8AA3B6-BD77-4B71-8F6B-A156F731FE86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D8AA3B6-BD77-4B71-8F6B-A156F731FE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D8AA3B6-BD77-4B71-8F6B-A156F731FE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D8AA3B6-BD77-4B71-8F6B-A156F731FE86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CA3C468-5C0C-48A6-B927-FC6EDF362A4B}
+	EndGlobalSection
+EndGlobal

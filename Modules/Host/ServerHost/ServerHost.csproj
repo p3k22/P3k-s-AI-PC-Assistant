@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="copy &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(ProjectDir)..\Bin&quot;" />
+	</Target>
+
+	<ItemGroup>
+	  <Reference Include="ChatGPT">
+	    <HintPath>..\Bin\ChatGPT.dll</HintPath>
+	  </Reference>
+	  <Reference Include="GoogleTextToSpeech">
+	    <HintPath>..\Bin\GoogleTextToSpeech.dll</HintPath>
+	  </Reference>
+	  <Reference Include="MyLogger">
+	    <HintPath>..\Bin\MyLogger.dll</HintPath>
+	  </Reference>
+	  <Reference Include="OpenAITextToSpeech">
+	    <HintPath>..\Bin\OpenAITextToSpeech.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+
+</Project>
