@@ -8,7 +8,8 @@ WPF is incomplete and in an unfinished state currently.
 
 # The IDEA
 To have an integrated windows app that runs in the background of a users PC and can interact with the app via talking or typing to it.
-*Hopeful Features*
+
+*Hopeful Features:*
 - Quick file search and open via voice command
 - Internet browsal requests such as visiting a site and searching for something
 - (Rick's Garage type AI). Voice recording, recognition, playback, sarcasm! "AI gonna AI"
